@@ -1,0 +1,280 @@
+.full {
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bord {
+    width: 50%;
+    margin-top: 5vw;
+    margin-bottom: 20vw;
+    text-align: center;
+    color: rgb(0, 55, 133);
+    font-weight: 500;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 10vw;
+    background-image: url("btn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50vw;
+    font-size: 25px;
+    text-shadow: 0vw 0vw 2vw rgb(0, 0, 0);
+  }
+  
+  .res {
+    margin-left: 20vw;
+    margin-right: 15vw;
+    border-radius: 1vw;
+    text-align: center;
+    width: 50%;
+    margin-top: 5vw;
+    text-align: center;
+  }
+  
+  .rob {
+    width: 75%;
+    margin-left: 10vw;
+  }
+  
+  .topright {
+    position: absolute;
+    width: 40%;
+    top: 45px;
+    left: 5px;
+    text-align: center;
+  }
+  .topright1 {
+    position: absolute;
+    width: 40%;
+    top: 85px;
+    left: 5px;
+    text-align: center;
+  }
+  .topright2 {
+    position: absolute;
+    width: 40%;
+    top: 125px;
+    right: 5px;
+    text-align: center;
+  }
+  .topleft {
+    position: absolute;
+    width: 40%;
+    top: 45px;
+    right: 5px;
+    text-align: center;
+  }
+  .topleft1 {
+    position: absolute;
+    width: 40%;
+    top: 85px;
+    right: 5px;
+    text-align: center;
+  }
+  .topleft2 {
+    position: absolute;
+    width: 40%;
+    top: 125px;
+    left: 5px;
+    text-align: center;
+  }
+  .main {
+    text-align: center;
+    margin-top: 25vw;
+  }
+  .done {
+    text-shadow: 0vw 0vw 2vw rgb(179, 0, 0);
+    font-weight: 700;
+    font-size: 10vw;
+  }
+  .done1 {
+    text-shadow: 0vw 0vw 2vw rgb(0, 179, 48);
+    font-weight: 700;
+    font-size: 10vw;
+  }
+  body {
+    background-color: rgb(0, 70, 120);
+  }
+  .body1 {
+    overflow-x: hidden;
+  }
+  .titlee {
+    color: rgb(0, 0, 0);
+    text-shadow: 0vw 0vw 2vw rgb(255, 255, 255);
+  }
+  .whi {
+    color: rgb(0, 0, 0);
+    text-shadow: 0vw 0vw 2vw black;
+  }
+  
+  .z1 {
+    z-index: 1000;
+  }
+  
+  .new {
+    background-image: radial-gradient(
+      white,
+      rgb(255, 239, 201),
+      rgb(255, 248, 218)
+    );
+    margin: 2vw;
+    padding: 2vw;
+    padding-bottom: 20vw;
+    border-radius: 2vw;
+    width: 96%;
+    margin-top: 2vw;
+  }
+  .new2 {
+    background-image: radial-gradient(rgb(0, 0, 0), rgb(46, 0, 0), rgb(0, 0, 0));
+    margin: 0vw;
+    padding: 2vw;
+    height: 500vw;
+  }
+  .new3 {
+    background-image: radial-gradient(
+      rgb(255, 255, 255),
+      rgb(44, 174, 0),
+      rgb(255, 255, 255)
+    );
+    margin: 0vw;
+    padding: 2vw;
+    height: 500vw;
+  }
+  .foot {
+    padding: 5vw;
+    padding-right: 20vw;
+    color: rgb(255, 252, 249);
+    border-radius: 100px 100px 100px 100px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    right: -3%;
+  }
+  
+  .try {
+    background-color: white;
+    border: 0.5vw solid gold;
+    border-radius: 2vw;
+    box-shadow: 0vw 0vw 5vw 4vw gold;
+  }
+  
+  ul {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    box-shadow: 0vw 0vw 3vw white;
+  
+  }
+  
+  ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  
+  ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+    
+  }
+  
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  ul li a:hover:before {
+    top: 0;
+  }
+  
+  ul li:nth-child(1) a:before {
+    background: #dd4b39;
+  }
+  
+  ul li:nth-child(2) a:before {
+    background: #55acee;
+  }
+  
+  
+  .github {
+    background-image: url("github.png");
+  }
+  .gmail {
+    background-image: url("gmails.png");
+  }
+  
+  .click {
+    background-color: rgb(255, 255, 255);
+    padding: 3vw;
+    border-radius: 100px;
+    position: fixed;
+    left: 6%;
+    top: 6%;
+  }
+  
+  .menu {
+    background-color: rgb(255, 255, 255);
+    display: none;
+    border-radius: 2vw;
+    padding: 4vw;
+    width: 50%;
+    height: 30%;
+    z-index: 1000;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    border: .5vw solid black;
+    text-align: center;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    font-size: 20px;
+    z-index: 1000;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 50%;
+  }
+  
+  .showmenu {
+    display: inline-block;
+  }
+  .whi {
+    color: white;
+  }
+  .i {
+    font-weight: 900;
+    
+  }

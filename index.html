@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock-Paper-Scissors Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Metal+Mania&family=Nunito&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Metal+Mania&family=Nunito&family=Rubik+Doodle+Triangles&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script
+    Idontknowwhybutthisstillworksliterallyanythingbutsrcworkssolikeanythingwithsrcinthislineitslikeamagicwordforthebrowseryouputitthereandboomthebrowserknowstofetchwhateversatthaturlandloaditintothepageitskindacoolyouknowyoucanputlinkstoscriptsstylesheetsimageswhateveryouwantitsliketellingthebrowserheygogetthisthingandstickitheresuperhandyforbuildingwebsites="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body class="dope" id="body">
+
+  <!-- Intro Div -->
+  <div class="z1 container-fluid mt-5 full new" id="fullOne">
+    <div class="top">
+      <div class="row titlee">
+        <h1>Rock, Paper, Scissors!</h1>
+      </div>
+      <div class="row">
+        <div class="col-6-sm col-6-lg">
+          <label for="difSelector" class="form-label titlee">Difficulty Selector:</label>
+          <select class="form-select rob" id="difSelector">
+            <option place></option>
+            <option value="difOne">Easy</option>
+            <option value="difTwo">Normal</option>
+            <option value="difThree">Hard</option>
+          </select>
+        </div>
+        <div class="col-6-sm col-6-lg">
+          <label for="comName" class="form-label titlee">CPU Name:</label>
+          <input type="text " class="form-control rob" id="comName" placeholder="Enter Name for the Computer" />
+        </div>
+      </div>
+      <br>
+      <div class="col-6-sm col-6-lg">
+        <label for="plaName" class="form-label titlee">Player Name:</label>
+        <input type="text " class="form-control rob" id="plaName" placeholder="Enter Name for the Player" />
+      </div>
+    </div>
+
+    <div class="mid">
+      <button class="btn bord" onclick="display()">Choose</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <button id="bttn" type="button" class="click"><span class="whi">..  </span><span class="i">i</span><span class="whi">  ..</span></button>
+  <div class="menu">
+    <div class="menu_item"><a href="#">Before starting the game of Rock, Paper, Scissors, choose a difficulty level and input your name and your CPU opponent's name. Press a button to continue. Then, simply input "Rock", "Paper", or "Scissors" to determine the winner. Good luck!
+
+
+
+
+
+
+
+
+
+    </a></div>
+  </div>
+  
+
+
+  <!-- Game Div -->
+  <div id="new" class="new">
+    <div class="topleft">
+      <h1 id="displayPlayerName"></h1>
+    </div>
+    <div class="topleft1">
+      <h2 id="displayPlayerName1"></h2>
+    </div>
+    <div class="topleft2">
+      <h1 id="displayScoreName"></h1>
+    </div>
+
+    <div class="topright">
+      <h1 id="displayComputerName"></h1>
+    </div>
+    <div class="topright1">
+      <h2 id="displayComputerName1"></h2>
+    </div>
+    <div class="topright2">
+      <h1 id="displayScoreName1"></h1>
+    </div>
+
+    <div class="container-fluid main" id="gameDiv">
+      <label for="humanRes" class="form-label">Rock, Paper, Scissors!</label>
+      <input type="text " class="form-control rob" id="humanRes" placeholder="Choose Rock, Paper, or Scissors" />
+      <button id="lockInButton" class="btn bord" onclick="selectOne()">Lock In Your Answer!</button>
+      <h1 id="gameOver"></h1>
+      <h1 id="goodGame"></h1>
+
+      <div id="resTwo" class="res">
+        <p id="resOne"></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button id="try" class="try btn" onclick="reload()">Try Again</button>
+
+  <div class="foot">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <ul>
+      <li class="box">
+        <a href="https://github.com/BLipsky"><i class="fab fa-github icon"></i></a>
+      </li>.
+
+
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
